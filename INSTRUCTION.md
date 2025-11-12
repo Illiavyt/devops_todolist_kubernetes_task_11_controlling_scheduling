@@ -12,7 +12,7 @@ kubectl get pods -n todoapp
 
 # Перевірка роботи додатка
 # Знайди IP або налаштуй порт-форвардинг:
-kubectl port-forward .infrastructure/app/deployment/todoapp 8080:8080 -n todoapp
+kubectl port-forward deployment/todoapp 8080:8080 -n todoapp
 
 # Потім у браузері або через curl відкрий:
 http://localhost:8080/api/
